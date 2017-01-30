@@ -1,0 +1,393 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* HTML5 */
+header, section, footer, aside, article, nav, figure {
+  display: block;
+}
+
+
+/* BODY */
+body {
+  font-family: Futura, Arial, Helvetica, sans-serif;
+  font-size: 100%; /* 1em = 16px */
+  line-height: 1.5em;
+  color: #A59E9D;
+  /*background-image: url(../assets/img/18.jpg);
+  background-repeat: repeat-y;*/
+  background-size:100%;
+  background-position: top;
+}
+
+/* HEADINGS
+  48, 36, 24, 21, 18, 16
+*/
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: .5em;
+}
+
+h1 {
+  font-size: 3em; /* 48px / 16px = 3em */
+  line-height: 1em;
+}
+
+h2 {
+  font-size: 2.25em; /* 36px / 16px = 2.25em */
+  line-height: 1.1em;
+}
+
+h3 {
+  font-size: 1.5em; /* 24px / 16px = 1.5em */
+  line-height: 1.2em;
+}
+
+h4 {
+  font-size: 1.3125em; /* 21px / 16px = 1.3125em */
+  line-height: 1.3em;
+}
+
+h5 {
+  font-size: 1.125em; /* 18px / 16px = 1.125em */
+  line-height: 1.4em;
+}
+
+h6 {
+  font-size: 1em; /* 16px / 16px = 1em */
+  line-height: 1.5em;
+}
+
+
+/* PARAGPRAHS */
+p {
+  margin-bottom: 2em;
+}
+
+/* LINKS */
+
+a {
+  /*color: rgba(92, 1, 78, 0.8);*/
+  text-decoration: none;
+  color: rgb(158, 153, 152);
+}
+
+a:hover{
+  /*color: rgba(92, 1, 78, 0.5);*/
+    color: rgba(233, 127, 5,0.7);
+  }
+a:active, a:visited{
+color: rgb(158, 153, 152,0.5);
+}
+
+/* LISTS */
+ul, ol {
+  margin-bottom: .5em;
+}
+
+ul li ul, ul li ol, ol li ol, ol li ul {
+  margin-bottom: 0;
+}
+
+li {
+  margin-left: 1.875em;
+}
+
+/* IMAGES */
+.scale-with-grid {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* CLEARFIX */
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+}
+.row:after {
+  clear: both;
+}
+.row {
+  clear: both;
+  *zoom: 1;
+}
+
+/*CONTAINER*/
+
+.container {
+  width: 58.75em; /* 960px / 16px = 60em */
+  padding: 0 .625em;
+  margin: 0 auto;
+}
+
+
+
+/*Specific*/
+/*MAIN NAV=====================================*/
+/*a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+a:hover, a:active, a:visited {
+  color: rgba(255,255,255,0.5);
+}*/
+header{
+  background-image: url(../assets/img/18.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+}
+
+
+
+
+.section01 h1  {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 3.5em;
+  padding-top: 1.5em;
+  margin-bottom: 0.05em;
+}
+.section01 a {
+  color: rgba(255,255,255,1);
+}
+.section01 a:hover {
+  color: rgba(255,255,255,0.8);
+}
+
+.section01 .tagline{
+  text-align: center;
+  font-size: 1em;
+  font-weight: lighter;
+  color: rgba(255,255,255,1);
+
+
+}
+
+
+
+.mainnav {
+  /*margin: 2em 0;*/
+background-color: rgba(0, 0, 0, 0.6);
+  padding: 2px 0;
+  /*margin: 0 10px 0 10px;*/
+  text-align: center;
+
+
+
+}
+.mainnav ul{
+  margin:0;
+}
+.mainnav ul li {
+    display: inline-block;
+    margin: 0;
+    padding: 0.5em 1.25em;
+
+}
+.mainnav li:hover{
+  border-left: 1px solid  rgba(255,255,255,0.5);
+  border-right: 1px solid  rgba(255,255,255,0.5);
+  border-radius: 5px;
+}
+.mainnav .active{
+  background: rgba(25, 6, 6, 0.8);
+
+}
+
+.mainnav ul li a {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #fdfdfd;
+    font-weight: bold;
+    font-size: 1.025em;
+    /*padding: 0.5em 1.25em;*/
+}
+.mainnav small {
+  display: block;
+  text-transform: capitalize;
+
+	font-size: .625em;
+	line-height: 1em;
+	color: #999;
+	font-weight: normal;
+}
+
+
+.slogan {
+  height: 50%;
+  font-family:   Futura, Trebuchet MS, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: calc(10px + 5vw);
+  line-height: 1em;
+  letter-spacing: 5px;
+  padding: 100px;
+  padding-left: 0;
+  margin-bottom: 0;
+  background: url(../assets/img/18.jpg)
+  no-repeat center center;
+  background-size: 100% auto;
+
+
+  /* -webkit-background-clip clips the background of the element to the text */
+   -webkit-text-fill-color: transparent; /* overrides the white text color in webkit browsers */
+   -webkit-background-clip: text;
+
+
+}
+
+.slogan p {
+  margin-bottom: 0;
+}
+
+
+/*CONTENT*/
+
+.section02{
+background-color: #fff;
+margin-top: 4%;
+}
+
+.section02 h2{
+  color:#E97F05;
+  font-size: 5.5em;
+  text-align: center;
+  margin: 0.75em 0;
+
+}
+.section02 h4{
+  font-size: 1.25em;
+  /*color:rgba(144, 0, 85, 0.84);*/
+  color: rgb(95, 91, 91);
+  font-weight: light;
+  line-height: 0.5em;
+  text-transform: uppercase;
+
+}
+.section02 h5{
+    font-size: 1em;
+  margin-top: 1em;
+    color: rgb(95, 91, 91);
+  border-bottom: 1px solid #DED4D4;
+  padding_top:0.75em;
+
+}
+
+
+
+
+
+
+
+
+.footer{
+  background-image: url(../assets/img/18.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  padding: 3rem 0;
+  background-attachment: fixed;
+}
+.footer h3{
+  color: #fff;
+  padding-top: 25px;
+}
+.footer p{
+  color: #fff;
+}
+.footer i{
+  font-size: 1.3em;
+  line-height: 1.3em;
+  padding-left: 0.2em;
+  padding-right: 0.5em;
+}
+.footer i:first-of-type{
+  font-size: 2em;
+  padding-left: 0.3em;
+}
+
+
+/*COLLUM*/
+.col01{
+  float: left;
+  margin-left: 10%;
+  width: 40%;
+}
+.block{
+  margin-bottom: 20%;
+}
+
+
+
+
+
+
+@media only screen and (min-width: 48em) and (max-width: 62em) {
+
+body {
+  font-size: 90%; /* 14px / 16px = 0.875 * 100 = 87.5% */
+  }
+
+.container {
+  width: 92%;
+  }
+
+
+
+  .mainnav ul {
+    padding: .8em 0;
+    float: none;
+  }
+
+  .mainnav ul li {
+    float: none;
+    display: block;
+  }
+
+
+
+}
+
+@media only screen and (max-width: 47.9999em) {
+/* MOBILE =====================================================*/
+
+
+body {
+   font-size: 90%; /* 12px / 16px = 0.75 * 100 = 75% */
+ }
+ .container {
+   width: 90%;
+ }
+
+
+   .mainnav {
+     min-height: 60px;
+   }
+
+   .mainnav ul {
+     padding: .8em 0;
+     float: none;
+   }
+
+   .mainnav ul li {
+     float: none;
+     display: block;
+   }
+
+ .section01 h1{
+   font-size: 3em;
+ }
+
+
+
+
+ .col01{
+   float: none;
+   width: 80%;
+ }
+}

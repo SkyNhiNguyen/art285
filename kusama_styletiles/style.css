@@ -1,0 +1,439 @@
+@font-face{
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 300;
+  src: local("Open Sans Light Italic"),local(OpenSansLight-Italic),url(//fonts.gstatic.com/s/opensans/v13/PRmiXeptR36kaC0GEAetxrXcjzEax2LfQAlK8DdMzhA.eot?#) format("eot"),url(//fonts.gstatic.com/s/opensans/v13/PRmiXeptR36kaC0GEAetxh_xHqYgAV9Bl_ZQbYUxnQU.woff) format("woff2"),url(//fonts.gstatic.com/s/opensans/v13/PRmiXeptR36kaC0GEAetxh_xHqYgAV9Bl_ZQbYUxnQU.woff) format("woff"); }
+@font-face{
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Open Sans Italic"),local(OpenSans-Italic),url(//fonts.gstatic.com/s/opensans/v13/xjAJXh38I15wypJXxuGMBmfQcKutQXcIrRfyR5jdjY8.eot?#) format("eot"),url(//fonts.gstatic.com/s/opensans/v13/xjAJXh38I15wypJXxuGMBobN6UDyHWBl620a-IRfuBk.woff) format("woff2"),url(//fonts.gstatic.com/s/opensans/v13/xjAJXh38I15wypJXxuGMBobN6UDyHWBl620a-IRfuBk.woff) format("woff"); }
+@font-face{
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 600;
+  src: local("Open Sans Semibold Italic"),local(OpenSans-SemiboldItalic),url(//fonts.gstatic.com/s/opensans/v13/PRmiXeptR36kaC0GEAetxo8mkAiYpFywqG2RvpzBnTU.eot?#) format("eot"),url(//fonts.gstatic.com/s/opensans/v13/PRmiXeptR36kaC0GEAetxn5HxGBcBvicCpTp6spHfNo.woff) format("woff2"),url(//fonts.gstatic.com/s/opensans/v13/PRmiXeptR36kaC0GEAetxn5HxGBcBvicCpTp6spHfNo.woff) format("woff"); }
+@font-face{
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: local("Open Sans Bold Italic"),local(OpenSans-BoldItalic),url(//fonts.gstatic.com/s/opensans/v13/PRmiXeptR36kaC0GEAetxrFt29aCHKT7otDW9l62Aag.eot?#) format("eot"),url(//fonts.gstatic.com/s/opensans/v13/PRmiXeptR36kaC0GEAetxjqR_3kx9_hJXbbyU8S6IN0.woff) format("woff2"),url(//fonts.gstatic.com/s/opensans/v13/PRmiXeptR36kaC0GEAetxjqR_3kx9_hJXbbyU8S6IN0.woff) format("woff"); }
+@font-face{
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 800;
+  src: local("Open Sans Extrabold Italic"),local(OpenSans-ExtraboldItalic),url(//fonts.gstatic.com/s/opensans/v13/PRmiXeptR36kaC0GEAetxphT2rkLFFMVLymfgfmWVtI.eot?#) format("eot"),url(//fonts.gstatic.com/s/opensans/v13/PRmiXeptR36kaC0GEAetxkCDe67GEgBv_HnyvHTfdew.woff) format("woff2"),url(//fonts.gstatic.com/s/opensans/v13/PRmiXeptR36kaC0GEAetxkCDe67GEgBv_HnyvHTfdew.woff) format("woff"); }
+@font-face{
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Open Sans Light"),local(OpenSans-Light),url(//fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTXZ2MAKAc2x4R1uOSeegc5U.eot?#) format("eot"),url(//fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff) format("woff2"),url(//fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff) format("woff"); }
+@font-face{
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans"),local(OpenSans),url(//fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot?#) format("eot"),url(//fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format("woff2"),url(//fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format("woff"); }
+@font-face{
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Open Sans Semibold"),local(OpenSans-Semibold),url(//fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSnZ2MAKAc2x4R1uOSeegc5U.eot?#) format("eot"),url(//fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff) format("woff2"),url(//fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff) format("woff"); }
+@font-face{
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Open Sans Bold"),local(OpenSans-Bold),url(//fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzHZ2MAKAc2x4R1uOSeegc5U.eot?#) format("eot"),url(//fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzHhCUOGz7vYGh680lGh-uXM.woff) format("woff2"),url(//fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzHhCUOGz7vYGh680lGh-uXM.woff) format("woff"); }
+@font-face{
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 800;
+  src: local("Open Sans Extrabold"),local(OpenSans-Extrabold),url(//fonts.gstatic.com/s/opensans/v13/EInbV5DfGHOiMmvb1Xr-hnZ2MAKAc2x4R1uOSeegc5U.eot?#) format("eot"),url(//fonts.gstatic.com/s/opensans/v13/EInbV5DfGHOiMmvb1Xr-hnhCUOGz7vYGh680lGh-uXM.woff) format("woff2"),url(//fonts.gstatic.com/s/opensans/v13/EInbV5DfGHOiMmvb1Xr-hnhCUOGz7vYGh680lGh-uXM.woff) format("woff"); }
+@font-face{
+  font-family: Raleway;
+  font-style: italic;
+  font-weight: 100;
+  src: local("Raleway Thin Italic"),local(Raleway-ThinItalic),url(//fonts.gstatic.com/s/raleway/v11/IWp_KHUkJoKURWwpAA2nYGfQcKutQXcIrRfyR5jdjY8.eot?#) format("eot"),url(//fonts.gstatic.com/s/raleway/v11/IWp_KHUkJoKURWwpAA2nYIbN6UDyHWBl620a-IRfuBk.woff) format("woff2"),url(//fonts.gstatic.com/s/raleway/v11/IWp_KHUkJoKURWwpAA2nYIbN6UDyHWBl620a-IRfuBk.woff) format("woff"); }
+@font-face{
+  font-family: Raleway;
+  font-style: italic;
+  font-weight: 200;
+  src: local("Raleway ExtraLight Italic"),local(Raleway-ExtraLightItalic),url(//fonts.gstatic.com/s/raleway/v11/N2DIbZG4399cPGfifZUEQnZ2MAKAc2x4R1uOSeegc5U.eot?#) format("eot"),url(//fonts.gstatic.com/s/raleway/v11/N2DIbZG4399cPGfifZUEQnhCUOGz7vYGh680lGh-uXM.woff) format("woff2"),url(//fonts.gstatic.com/s/raleway/v11/N2DIbZG4399cPGfifZUEQnhCUOGz7vYGh680lGh-uXM.woff) format("woff"); }
+@font-face{
+  font-family: Raleway;
+  font-style: italic;
+  font-weight: 300;
+  src: local("Raleway Light Italic"),local(Raleway-LightItalic),url(//fonts.gstatic.com/s/raleway/v11/TVSB8ogXDKMcnAAJ5CqrUnZ2MAKAc2x4R1uOSeegc5U.eot?#) format("eot"),url(//fonts.gstatic.com/s/raleway/v11/TVSB8ogXDKMcnAAJ5CqrUnhCUOGz7vYGh680lGh-uXM.woff) format("woff2"),url(//fonts.gstatic.com/s/raleway/v11/TVSB8ogXDKMcnAAJ5CqrUnhCUOGz7vYGh680lGh-uXM.woff) format("woff"); }
+@font-face{
+  font-family: Raleway;
+  font-style: italic;
+  font-weight: 400;
+  src: local("Raleway Italic"),local(Raleway-Italic),url(//fonts.gstatic.com/s/raleway/v11/IIm-lPOtfVKQy0GMiczF__Y6323mHUZFJMgTvxaG2iE.eot?#) format("eot"),url(//fonts.gstatic.com/s/raleway/v11/IIm-lPOtfVKQy0GMiczF_z8E0i7KZn-EPnyo3HZu7kw.woff) format("woff2"),url(//fonts.gstatic.com/s/raleway/v11/IIm-lPOtfVKQy0GMiczF_z8E0i7KZn-EPnyo3HZu7kw.woff) format("woff"); }
+@font-face{
+  font-family: Raleway;
+  font-style: italic;
+  font-weight: 500;
+  src: local("Raleway Medium Italic"),local(Raleway-MediumItalic),url(//fonts.gstatic.com/s/raleway/v11/S7vGLZZ40c85SJgiptJGV3Z2MAKAc2x4R1uOSeegc5U.eot?#) format("eot"),url(//fonts.gstatic.com/s/raleway/v11/S7vGLZZ40c85SJgiptJGV3hCUOGz7vYGh680lGh-uXM.woff) format("woff2"),url(//fonts.gstatic.com/s/raleway/v11/S7vGLZZ40c85SJgiptJGV3hCUOGz7vYGh680lGh-uXM.woff) format("woff"); }
+@font-face{
+  font-family: Raleway;
+  font-style: italic;
+  font-weight: 600;
+  src: local("Raleway SemiBold Italic"),local(Raleway-SemiBoldItalic),url(//fonts.gstatic.com/s/raleway/v11/OY22yoG8EJ3IN_muVWm29HZ2MAKAc2x4R1uOSeegc5U.eot?#) format("eot"),url(//fonts.gstatic.com/s/raleway/v11/OY22yoG8EJ3IN_muVWm29HhCUOGz7vYGh680lGh-uXM.woff) format("woff2"),url(//fonts.gstatic.com/s/raleway/v11/OY22yoG8EJ3IN_muVWm29HhCUOGz7vYGh680lGh-uXM.woff) format("woff"); }
+@font-face{
+  font-family: Raleway;
+  font-style: italic;
+  font-weight: 700;
+  src: local("Raleway Bold Italic"),local(Raleway-BoldItalic),url(//fonts.gstatic.com/s/raleway/v11/lFxvRPuGFG5ktd7P0WRwKnZ2MAKAc2x4R1uOSeegc5U.eot?#) format("eot"),url(//fonts.gstatic.com/s/raleway/v11/lFxvRPuGFG5ktd7P0WRwKnhCUOGz7vYGh680lGh-uXM.woff) format("woff2"),url(//fonts.gstatic.com/s/raleway/v11/lFxvRPuGFG5ktd7P0WRwKnhCUOGz7vYGh680lGh-uXM.woff) format("woff"); }
+@font-face{
+  font-family: Raleway;
+  font-style: italic;
+  font-weight: 800;
+  src: local("Raleway ExtraBold Italic"),local(Raleway-ExtraBoldItalic),url(//fonts.gstatic.com/s/raleway/v11/us4LjTCmlYgh3W8CKujEJnZ2MAKAc2x4R1uOSeegc5U.eot?#) format("eot"),url(//fonts.gstatic.com/s/raleway/v11/us4LjTCmlYgh3W8CKujEJnhCUOGz7vYGh680lGh-uXM.woff) format("woff2"),url(//fonts.gstatic.com/s/raleway/v11/us4LjTCmlYgh3W8CKujEJnhCUOGz7vYGh680lGh-uXM.woff) format("woff"); }
+@font-face{
+  font-family: Raleway;
+  font-style: italic;
+  font-weight: 900;
+  src: local("Raleway Black Italic"),local(Raleway-BlackItalic),url(//fonts.gstatic.com/s/raleway/v11/oY2RadnkHfshu5f0FLsgVXZ2MAKAc2x4R1uOSeegc5U.eot?#) format("eot"),url(//fonts.gstatic.com/s/raleway/v11/oY2RadnkHfshu5f0FLsgVXhCUOGz7vYGh680lGh-uXM.woff) format("woff2"),url(//fonts.gstatic.com/s/raleway/v11/oY2RadnkHfshu5f0FLsgVXhCUOGz7vYGh680lGh-uXM.woff) format("woff"); }
+@font-face{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 100;
+  src: local("Raleway Thin"),local(Raleway-Thin),url(//fonts.gstatic.com/s/raleway/v11/RJMlAoFXXQEzZoMSUteGWPY6323mHUZFJMgTvxaG2iE.eot?#) format("eot"),url(//fonts.gstatic.com/s/raleway/v11/RJMlAoFXXQEzZoMSUteGWD8E0i7KZn-EPnyo3HZu7kw.woff) format("woff2"),url(//fonts.gstatic.com/s/raleway/v11/RJMlAoFXXQEzZoMSUteGWD8E0i7KZn-EPnyo3HZu7kw.woff) format("woff"); }
+@font-face{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 200;
+  src: local("Raleway ExtraLight"),local(Raleway-ExtraLight),url(//fonts.gstatic.com/s/raleway/v11/8KhZd3VQBtXTAznvKjw-k1QlYEbsez9cZjKsNMjLOwM.eot?#) format("eot"),url(//fonts.gstatic.com/s/raleway/v11/8KhZd3VQBtXTAznvKjw-kxsxEYwM7FgeyaSgU71cLG0.woff) format("woff2"),url(//fonts.gstatic.com/s/raleway/v11/8KhZd3VQBtXTAznvKjw-kxsxEYwM7FgeyaSgU71cLG0.woff) format("woff"); }
+@font-face{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 300;
+  src: local("Raleway Light"),local(Raleway-Light),url(//fonts.gstatic.com/s/raleway/v11/-_Ctzj9b56b8RgXW8FAriVQlYEbsez9cZjKsNMjLOwM.eot?#) format("eot"),url(//fonts.gstatic.com/s/raleway/v11/-_Ctzj9b56b8RgXW8FAriRsxEYwM7FgeyaSgU71cLG0.woff) format("woff2"),url(//fonts.gstatic.com/s/raleway/v11/-_Ctzj9b56b8RgXW8FAriRsxEYwM7FgeyaSgU71cLG0.woff) format("woff"); }
+@font-face{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 400;
+  src: local(Raleway),local(Raleway-Regular),url(//fonts.gstatic.com/s/raleway/v11/JDau3G46nqY5-B-S9E_nwg.eot?#) format("eot"),url(//fonts.gstatic.com/s/raleway/v11/IczWvq5y_Cwwv_rBjOtT0w.woff) format("woff2"),url(//fonts.gstatic.com/s/raleway/v11/IczWvq5y_Cwwv_rBjOtT0w.woff) format("woff"); }
+@font-face{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  src: local("Raleway Medium"),local(Raleway-Medium),url(//fonts.gstatic.com/s/raleway/v11/CcKI4k9un7TZVWzRVT-T81QlYEbsez9cZjKsNMjLOwM.eot?#) format("eot"),url(//fonts.gstatic.com/s/raleway/v11/CcKI4k9un7TZVWzRVT-T8xsxEYwM7FgeyaSgU71cLG0.woff) format("woff2"),url(//fonts.gstatic.com/s/raleway/v11/CcKI4k9un7TZVWzRVT-T8xsxEYwM7FgeyaSgU71cLG0.woff) format("woff"); }
+@font-face{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  src: local("Raleway SemiBold"),local(Raleway-SemiBold),url(//fonts.gstatic.com/s/raleway/v11/xkvoNo9fC8O2RDydKj12b1QlYEbsez9cZjKsNMjLOwM.eot?#) format("eot"),url(//fonts.gstatic.com/s/raleway/v11/xkvoNo9fC8O2RDydKj12bxsxEYwM7FgeyaSgU71cLG0.woff) format("woff2"),url(//fonts.gstatic.com/s/raleway/v11/xkvoNo9fC8O2RDydKj12bxsxEYwM7FgeyaSgU71cLG0.woff) format("woff"); }
+@font-face{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  src: local("Raleway Bold"),local(Raleway-Bold),url(//fonts.gstatic.com/s/raleway/v11/JbtMzqLaYbbbCL9X6EvaI1QlYEbsez9cZjKsNMjLOwM.eot?#) format("eot"),url(//fonts.gstatic.com/s/raleway/v11/JbtMzqLaYbbbCL9X6EvaIxsxEYwM7FgeyaSgU71cLG0.woff) format("woff2"),url(//fonts.gstatic.com/s/raleway/v11/JbtMzqLaYbbbCL9X6EvaIxsxEYwM7FgeyaSgU71cLG0.woff) format("woff"); }
+@font-face{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 800;
+  src: local("Raleway ExtraBold"),local(Raleway-ExtraBold),url(//fonts.gstatic.com/s/raleway/v11/1ImRNPx4870-D9a1EBUdPFQlYEbsez9cZjKsNMjLOwM.eot?#) format("eot"),url(//fonts.gstatic.com/s/raleway/v11/1ImRNPx4870-D9a1EBUdPBsxEYwM7FgeyaSgU71cLG0.woff) format("woff2"),url(//fonts.gstatic.com/s/raleway/v11/1ImRNPx4870-D9a1EBUdPBsxEYwM7FgeyaSgU71cLG0.woff) format("woff"); }
+@font-face{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 900;
+  src: local("Raleway Black"),local(Raleway-Black),url(//fonts.gstatic.com/s/raleway/v11/PKCRbVvRfd5n7BTjtGiFZFQlYEbsez9cZjKsNMjLOwM.eot?#) format("eot"),url(//fonts.gstatic.com/s/raleway/v11/PKCRbVvRfd5n7BTjtGiFZBsxEYwM7FgeyaSgU71cLG0.woff) format("woff2"),url(//fonts.gstatic.com/s/raleway/v11/PKCRbVvRfd5n7BTjtGiFZBsxEYwM7FgeyaSgU71cLG0.woff) format("woff"); }
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Raleway:300,500,600,700,700i,800,800i,900");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none; }
+
+h1 {
+  color: #252c41;
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 1rem; }
+
+h2 {
+  color: #252c41;
+  font-family: "Raleway", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem; }
+
+h3 {
+  color: #252c41;
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem; }
+
+h4 {
+  color: #252c41;
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 1rem; }
+
+h5 {
+  color: #252c41;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-style: italic;
+  margin-bottom: 1rem; }
+
+p {
+  color: #252c41;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  margin-bottom: 1rem; }
+
+a {
+  color: #dddfe6; }
+
+a:hover {
+  color: #f1404b; }
+
+.tag {
+  width: 100%;
+  align-self: flex-start;
+  font-family: "Raleway", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin: 2rem 0 1rem; }
+
+.wrap1 {
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center; }
+
+.wrap2 {
+  padding: 1rem 1.5rem;
+  flex-flow: row wrap;
+  justify-content: flex-start; }
+
+@media screen and (min-width: 900px) {
+  .wrap1,
+  .wrap2 {
+    padding: 1rem 10vw; } }
+
+header {
+  background: #f4f5f9; }
+
+.logo {
+  padding: 4px; }
+  .logo img {
+    margin: auto;
+    width: 3rem; }
+
+.logo:hover {
+  background: #f1404b; }
+
+nav ul {
+  display: none;
+  flex-flow: row nowrap;
+  justify-content: flex-end; }
+
+nav a {
+  color: #252c41;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  padding: 6px 10px; }
+
+nav a:hover {
+  color: white;
+  background-color: #f1404b; }
+
+.hamburger i {
+  font-size: 2rem; }
+
+@media screen and (min-width: 520px) {
+  .logo {
+    padding: 4px; }
+    .logo img {
+      width: 4rem; }
+  nav ul {
+    display: flex; }
+  nav .hamburger {
+    display: none; } }
+
+.section1 {
+  background: #252c41;
+  text-align: center; }
+  .section1 .key {
+    text-align: center;
+    padding: 1rem; }
+    .section1 .key p {
+      font-size: 1.25rem;
+      color: white;
+      text-transform: uppercase;
+      margin: auto; }
+
+.color_box {
+  border-top: 1px solid #dddfe6;
+  border-bottom: 1px solid #dddfe6;
+  display: flex;
+  width: 100%; }
+  .color_box .color_box_cell {
+    width: calc((100% / 4) - 1rem);
+    height: 6rem;
+    margin: 1rem; }
+  .color_box .color_box_cell:first-of-type {
+    background: #f1404b; }
+  .color_box .color_box_cell:last-of-type {
+    background: #252c41; }
+  .color_box .color_box_cell:nth-child(2) {
+    background: #f4f5f9; }
+  .color_box .color_box_cell:nth-child(3) {
+    background: #dddfe6; }
+
+.section3 {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap; }
+
+.type_box {
+  border-top: 1px solid #dddfe6;
+  border-bottom: 1px solid #dddfe6;
+  padding: 1rem 0;
+  align-self: flex-start; }
+
+.button_box {
+  border-top: 1px solid #dddfe6;
+  border-bottom: 1px solid #dddfe6;
+  padding: 1rem 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center; }
+
+.button {
+  text-align: center;
+  background: #252c41;
+  align-self: center;
+  margin: 1rem;
+  padding: 1rem 3rem;
+  font-family: "Raleway", sans-serif; }
+
+.first {
+  background: #f1404b;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 5px; }
+  .first:hover {
+    background: none;
+    border: 3px solid #f1404b; }
+
+.second {
+  text-transform: capitalize; }
+  .second:hover {
+    background: #dddfe6;
+    color: #252c41; }
+
+.third {
+  border: 3px solid #252c41;
+  background: none;
+  color: #252c41;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 5px; }
+  .third:hover {
+    border-left: none;
+    border-right: none; }
+
+.texture_box {
+  border-top: 1px solid #dddfe6;
+  border-bottom: 1px solid #dddfe6;
+  padding: 1rem 0;
+  display: flex;
+  flex-flow: row wrap; }
+
+.texture_box_cell {
+  width: calc(100% / 4);
+  height: 10rem; }
+
+.texture_box_cell:first-of-type {
+  background-image: url(images/kusama.jpg);
+  background-size: cover; }
+
+.texture_box_cell:last-of-type {
+  background-image: url(images/infinity.jpg);
+  background-size: cover; }
+
+.texture_box_cell:nth-child(2) {
+  background-image: url(images/yellow.jpg);
+  background-size: cover; }
+
+.texture_box_cell:nth-child(3) {
+  background-image: url(images/red.jpg);
+  background-size: cover; }
+
+@media screen and (min-width: 900px) {
+  .section3 .wrap2:first-of-type {
+    width: 60%;
+    padding-right: 0; }
+  .section3 .wrap2:last-of-type {
+    width: 35%;
+    padding-left: 5vw; } }
+
+#form {
+  width: 100%;
+  margin: 2rem auto; }
+
+input {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  width: 100%;
+  height: 50px;
+  padding: 0 15px;
+  background: transparent;
+  outline: none;
+  color: #252c41;
+  border: solid 1px #dddfe6;
+  border-bottom: none;
+  transition: all 0.3s ease-in-out; }
+
+input:hover {
+  background: #f4f5f9;
+  color: #252c41; }
+
+textarea {
+  width: 100%;
+  max-width: 100%;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+  background: transparent;
+  outline: none;
+  color: #252c41;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  border: solid 1px #dddfe6;
+  transition: all 0.3s ease-in-out; }
+
+textarea:hover {
+  background: #f4f5f9;
+  color: #252c41; }
+
+#submit {
+  width: 100%;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 5px;
+  color: #f1404b;
+  outline: none;
+  cursor: pointer;
+  border: solid 2px #f1404b;
+  margin-top: 1rem; }
+
+#submit:hover {
+  color: white;
+  background: #f1404b; }
+
+@media screen and (min-width: 900px) {
+  #form {
+    width: 60%; } }
